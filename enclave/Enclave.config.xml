@@ -1,0 +1,12 @@
+<!-- Please refer to User's Guide for the explanation of each field -->
+<EnclaveConfiguration>
+  <ProdID>0</ProdID>
+  <ISVSVN>0</ISVSVN>
+  <StackMaxSize>0x60000</StackMaxSize>
+  <HeapMaxSize>0x100000</HeapMaxSize>
+  <TCSNum>2</TCSNum> <!-- number of available threads: main + 1 = 2 -->
+  <TCSPolicy>0</TCSPolicy> <!-- Bounded thread policy is required to use the Rust SDK's threads-->
+  <DisableDebug>0</DisableDebug>
+  <MiscSelect>0</MiscSelect>
+  <MiscMask>0xFFFFFFFF</MiscMask>
+</EnclaveConfiguration>
